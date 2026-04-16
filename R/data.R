@@ -1,0 +1,34 @@
+#' Dataset NCAA Basketball 2025-26
+#'
+#' A dataset summarizing the performances of NCAA Division I men's basketball teams
+#' for the 2025–26 season.
+#'
+#' @format A data frame with 365 rows and 23 columns:
+#' \describe{
+#'   \item{RK}{Barttorvik ranking at the end of the regular season}
+#'   \item{TEAM}{Name of the NCAA Division I team}
+#'   \item{CONF}{Team's conference}
+#'   \item{G}{Total number of games played}
+#'   \item{W}{Number of wins}
+#'   \item{ADJOE}{Adjusted offensive efficiency (points per 100 possessions)}
+#'   \item{ADJDE}{Adjusted defensive efficiency (points allowed per 100 possessions)}
+#'   \item{BARTHAG}{Power rating: probability of beating an average team}
+#'   \item{EFG_O}{Offensive effective field goal percentage}
+#'   \item{EFG_D}{Defensive effective field goal percentage allowed}
+#'   \item{TOR}{Offensive turnover rate (turnovers per possession)}
+#'   \item{TORD}{Defensive turnover rate (steal rate)}
+#'   \item{ORB}{Offensive rebound rate}
+#'   \item{DRB}{Defensive rebound rate}
+#'   \item{FTR}{Free throw rate (frequency of free throws attempted)}
+#'   \item{FTRD}{Free throw rate allowed}
+#'   \item{2P_O}{Two‑point field goal percentage}
+#'   \item{2P_D}{Two‑point field goal percentage allowed}
+#'   \item{3P_O}{Three‑point field goal percentage}
+#'   \item{3P_D}{Three‑point field goal percentage allowed}
+#'   \item{ADJ_T}{Adjusted tempo (possessions per 40 minutes)}
+#'   \item{WAB}{Wins Above Bubble (quality of résumé for NCAA Tournament selection)}
+#'   \item{SEED}{Team's NCAA Tournament seed}
+#' }
+#'
+#' @source <https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset?select=cbb26.csv>
+"ncaa26"

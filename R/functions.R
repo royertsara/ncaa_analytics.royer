@@ -110,7 +110,7 @@ team_profil<-function(data,team){
 #' A function filtering the dataset by conference
 #'
 #' @param data dataset cbb
-#' @param conf the desierd conference (ex: "ACC","B12","SEC",...)
+#' @param conf the desired conference (ex: "ACC","B12","SEC",...)
 #'
 #' @return tibble with teams from the selected conference
 #' @import dplyr
@@ -130,11 +130,11 @@ filter_conference<-function(data,conf="ACC"){
 
 #'-------Top conference
 #'
-#' A function to rank conferance by desierd metrics
+#' A function to rank conference by desired metrics
 #'
 #' @param data dataset cbb
-#' @param metric the desierde metric for the ranking from this list:c("ADJOE","ADJDE","EFG_O","EFG_D")
-#' @param desc boolean TRUE/FALSE
+#' @param metric the desired metric for the ranking from this list:c("ADJOE","ADJDE","EFG_O","EFG_D")
+#' @param desc boolean TRUE/FALSE, TRUE by default,
 #'
 #' @return tibble with the 31 conferences ranked
 #' @import dplyr

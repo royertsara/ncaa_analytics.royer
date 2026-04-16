@@ -9,7 +9,7 @@ filter_conference(data, conf = "ACC")
 \arguments{
 \item{data}{dataset cbb}
 
-\item{conf}{the desierd conference (ex: "ACC","B12","SEC",...)}
+\item{conf}{the desired conference (ex: "ACC","B12","SEC",...)}
 }
 \value{
 tibble with teams from the selected conference

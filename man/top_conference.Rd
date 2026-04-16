@@ -13,13 +13,13 @@ top_conference(
 \arguments{
 \item{data}{dataset cbb}
 
-\item{metric}{the desierde metric for the ranking from this list:c("ADJOE","ADJDE","EFG_O","EFG_D")}
+\item{metric}{the desired metric for the ranking from this list:c("ADJOE","ADJDE","EFG_O","EFG_D")}
 
-\item{desc}{boolean TRUE/FALSE}
+\item{desc}{boolean TRUE/FALSE, TRUE by default,}
 }
 \value{
 tibble with the 31 conferences ranked
 }
 \description{
-A function to rank conferance by desierd metrics
+A function to rank conference by desired metrics
 }

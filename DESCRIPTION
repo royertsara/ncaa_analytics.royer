@@ -1,0 +1,11 @@
+Package: ncaa.analytics.royer
+Title: 2025-26 NCAA teams performance
+Version: 0.0.0.9000
+Authors@R: 
+    person("Royer", "Tsarafiavy", , "royertsara@gmail.com", role = c("aut", "cre"))
+Description: Basic analysis of college basketball teams performance.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

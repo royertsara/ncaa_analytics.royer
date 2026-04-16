@@ -1,0 +1,58 @@
+---
+title: "intro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ncaa.analytics.royer)
+```
+
+## Basic analytics of NCAA teams:
+
+### Top 10 by win percentage
+
+You can rank the top 10 winingest teams of this year season by doing:
+
+```{r}
+best_10_winpct(df_cbb)
+```
+
+### Top offense:
+
+Explore the best offenses based on the metric of your choice:
+```{r}
+top_offense(df_cbb,n=10,metric="ADJOE")
+```
+
+### Top defense:
+
+Same logic here:
+```{r}
+top_defense(df_cbb,n=5,metric="ADJDE")
+```
+
+
+## Graphs
+Discover the profile of your favorite team, how did the State Champions Michigan perform during this season?:
+```{r}
+team_profil(df_cbb,"Michigan")
+```
+
+
+## Conference filter:
+You can filter the data by conference as well:
+```{r}
+filter_conference(df_cbb,conf="B12")
+```
+

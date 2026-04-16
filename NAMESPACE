@@ -2,6 +2,7 @@
 
 export(best_10_winpct)
 export(filter_conference)
+export(plot_top_conference)
 export(team_profil)
 export(top_conference)
 export(top_defense)

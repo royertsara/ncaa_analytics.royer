@@ -161,3 +161,43 @@ top_conference<-function(data,metric=c("ADJOE","ADJDE","EFG_O","EFG_D"),desc=TRU
 
   return(x)
 }
+
+#' Plot conference ranking based on a selected metric
+#'
+#' This function creates a simple horizontal bar chart showing the average
+#' value of a selected performance metric for each NCAA conference.
+#' It is designed to be used with the output of `top_conference()`,
+#' but works with any dataframe containing `CONF` and the chosen metric.
+#'
+#' @param data A dataframe containing at least two columns:
+#'   \code{CONF} (conference names) and the selected metric.
+#' @param metric A character string indicating which metric to plot c("ADJOE","ADJDE","EFG_O","EFG_D")
+#'
+#'
+#' @return A \code{ggplot} object representing a horizontal bar chart.
+#'
+#'
+#' @export
+#' @import dplyr
+#' @import ggplot2
+plot_top_conference <- function(data, metric = "ADJOE") {
+
+  # Vérification basique
+  if (!metric %in% names(data)) {
+    stop("Metric not found in dataframe")
+  }
+
+  ggplot2::ggplot(data) +
+    ggplot2::aes(
+      x = reorder(CONF, .data[[metric]]),
+      y = .data[[metric]]
+    ) +
+    ggplot2::geom_bar(stat = "identity") +
+    ggplot2::coord_flip() +
+    ggplot2::theme_classic() +
+    ggplot2::labs(
+      title = paste("Conference ranking by", metric),
+      x = "Conference",
+      y = metric
+    )
+}
